@@ -1,5 +1,4 @@
-# Web Development Project 6 - *AstroDataDashboard2
-*
+# Web Development Project 6 - *AstroDataDashboard2*
 
 Submitted by: **Yanwen Chen**
 
