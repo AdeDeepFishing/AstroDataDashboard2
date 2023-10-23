@@ -1,0 +1,162 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-attachment: fixed;
+  background-image: url("/src/assets/earthlogo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 100vh;
+  align-items: flex-start
+}
+
+.left-section {
+  flex: 1; 
+  max-width: 30%; 
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.right-section {
+  flex: 4; 
+  padding: 20px;
+  max-width: 80%;
+}
+
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin: 0;
+  color: rgb(255, 95, 191);
+  font-size: 37px;
+}
+
+/* NavBar */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav a {
+  color: rgb(255, 95, 191);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 95, 191);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: block;
+  text-align: left; 
+  padding: 14px 16px; 
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Card */
+.card {
+  width: 100%;
+  color: rgb(255, 95, 191);
+  margin-bottom: 20px;
+}
+
+/* List */
+.list {
+  width: 100%;
+  overflow-x: auto; 
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(255, 95, 191);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 20px; 
+  font-size: 14px; 
+}
+
+th, td {
+  padding: 12px 15px; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-size: 16px;
+}
+
+tr:last-child td {
+  border-bottom: none; 
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* DatailView */
+.detailview {
+  color: rgb(255, 95, 191);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* VisualizationToggle */
+.rightright-section{
+  flex: 2; 
+  padding: 20px;
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  color: rgb(255, 95, 191);
+}
+
+.visualization-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.visualization-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
